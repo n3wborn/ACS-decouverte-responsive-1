@@ -1,10 +1,16 @@
-/* TESTS */
+/************
+ * TESTS
+ */
 
-div {
+/*div {
 	border: 1px solid black;
 }
+*/
 
-/* BASE */
+/************
+ * BASE
+ */
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -12,7 +18,10 @@ div {
 }
 
 
-/* Couleurs */
+/************
+ * COULEURS
+ */
+
 :root {
 	--color-txt-paragraph: #5E5E5E;
 	--color-txt-title: #2E2E2E;
@@ -22,7 +31,12 @@ div {
 	--color-border: #707070;
 }
 
-/* Fontes et gestion des textes */
+
+/************
+ * GESTION DU TEXTE
+ * (les fontes sont placées dans responsive)
+ */
+
 h1 {
 	font-family: rubik-medium, sans-serif;
 	font-size: 2.25rem;
@@ -54,9 +68,13 @@ h1, h2, p {
 	text-align: center;
 }
 
-/* containers */
+
+/************
+ * CONTAINERS
+ */
+
 #main-container {
-	align-content: center;
+	margin: 16vh 19.5vw 12.3vh 19.5vw;
 	max-width: 1170px;
 	width: 61vw;
 }
@@ -75,23 +93,35 @@ h1, h2, p {
 	flex-direction: column;
 }
 
-/* Reste */
+
+/************
+ * DIVERS
+ */
 
 header {
-	flex-basis: 1 0 50%;
+	flex: 0 0 50%;
+	align-items: center;
+	padding-bottom: 90px;
 }
 
-main {
-
+header p {
+	max-width: 33vw;
 }
 
 .value {
+	flex: 0 0 23%;
 	align-items: center;
-	border: 1px var(--color-border);
+	padding-top: 56px;
+	padding-bottom: 50px;
+	border: 1px solid var(--color-border);
 	border-radius: 10%;
+	box-shadow: 0px 7px 27px var(--color-border);
 }
 
-
+.div-value-txt {
+	padding-left: 1.6vw;
+	padding-right: 1.6vw;
+}
 .icon {
-
+	margin-bottom: 35px;
 }
