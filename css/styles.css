@@ -1,0 +1,97 @@
+/* TESTS */
+
+div {
+	border: 1px solid black;
+}
+
+/* BASE */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+/* Couleurs */
+:root {
+	--color-txt-paragraph: #5E5E5E;
+	--color-txt-title: #2E2E2E;
+	--color-jaune: #FF8400;
+	--color-bleu: #0E3B84;
+	--color-gradient: #0E3B84;
+	--color-border: #707070;
+}
+
+/* Fontes et gestion des textes */
+h1 {
+	font-family: rubik-medium, sans-serif;
+	font-size: 2.25rem;
+	line-height: 2.7;
+	color: var(--color-txt-title) ;
+}
+
+h2 {
+	font-family: rubik-medium, sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5;
+	color: var(--color-txt-title) ;
+}
+
+p {
+	font-family: rubik-regular, sans-serif;
+	font-size: 1rem;
+	line-height: 1.875;
+	color: var(--color-txt-paragraph);
+}
+
+header p {
+	font-family: rubik-regular;
+	font-size: 1.0625;
+	line-height: 2;
+}
+
+h1, h2, p {
+	text-align: center;
+}
+
+/* containers */
+#main-container {
+	align-content: center;
+	max-width: 1170px;
+	width: 61vw;
+}
+
+#value-container {
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Reste */
+
+header {
+	flex-basis: 1 0 50%;
+}
+
+main {
+
+}
+
+.value {
+	align-items: center;
+	border: 1px var(--color-border);
+	border-radius: 10%;
+}
+
+
+.icon {
+
+}
