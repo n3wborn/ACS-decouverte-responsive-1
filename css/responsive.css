@@ -1,4 +1,7 @@
-/* FONTES */
+/************
+ * FONTES
+ */
+
 @font-face {
   font-family: 'rubik-regular';
   src: url('../fonts/Rubik-Regular.eot');
@@ -35,14 +38,72 @@
   font-style: normal;
 }
 
-/* regles @ */
-@custom-media --viewport-4 (min-width: 480px);
-@custom-media --viewport-7 (min-width: 768px);
-@custom-media --viewport-9 (min-width: 992px);
-@custom-media --viewport-12 (min-width: 1200px);
 
-@media (--viewport-4) {
-  /* ... */
+/************
+ * RESPONSIVE
+ */
+
+@media (max-width:  1199.98px) {
+
+  #main-container {margin: auto}
+  body {font-size: 1.5rem;}
+  h1 {font-size: 2.7rem; line-height: 3rem;}
+  h2 {font-size: 1.6rem;}
+  header p {font-size: 1.25rem; line-height: 2.8rem;}
 }
 
 
+@media (max-width:  991.98px) {
+
+  #main-container {
+  margin: auto;
+  }
+
+  header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+  }
+
+  header p {
+     width: auto;
+  }
+
+  #value-container {
+    justify-content: center;
+  }
+
+  .value {
+  flex: 0 0 45%;
+  align-items: center;
+  margin: 10px 2px;
+  }
+}
+
+
+@media  (max-width: 575.98px)  {
+  #main-container {
+    margin: 0vh 2vw 0vh 2vw;
+    width: 100vw;
+  }
+
+  #value-container {
+    flex-wrap: wrap;
+  }
+
+  .value {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: 10px 2px;
+    min-width: 270px;
+    min-height:270px;
+  }
+
+  header {
+    width: auto;
+  }
+
+  header p {
+    max-width: 90vw;
+  }
+}
